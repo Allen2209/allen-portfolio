@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECE Portfolio | Electronics & Communication Engineer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+</head>
+
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- No more scanlines -->
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="hud-line h" style="top:0; left:20px;"></div>
+    <div class="hud-line v" style="top:0; left:0;"></div>
+    <div class="nav-logo">
+      <span class="logo-bracket"></span>
+      <span class="logo-text">ALLEN-PORTFOLIO</span>
+      <span class="logo-dot"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#hobbies" class="nav-link" data-section="hobbies">Music</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      <li><a href="#" class="nav-link cv-link" target="_blank">CV</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Electronics & Communication Engineer</div>
+      <h1 class="hero-title">
+        <span class="title-line">ALLEN</span>
+        <span class="title-line accent">SAMUEL</span>
+        <span class="title-line accent"> A</span>
+      </h1>
+      <p class="hero-subtitle">Engineering ideas into smart real-world solutions.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#" class="btn-secondary" id="cv-download">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-visual-modern">
+      <!-- Three.js background will handle the visual -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <div class="section-header">
+      <div class="section-tag">OVERVIEW</div>
+      <h2 class="section-title">ABOUT <span class="accent">ME</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card">
+        <p class="about-text">
+          I am an <strong>Electronics and Communication Engineering (ECE)</strong> student with a strong interest in
+          <strong>IoT and embedded systems</strong>, and web page designing. I work with <strong>Arduino, ESP32,
+            Raspberry Pi</strong> and more to build simple and practical projects. I also have experience in web page
+          designing, which helps me combine hardware and software in one solution. I know programming languages like
+          <strong>C, C++, Python, HTML, and CSS</strong>, and I also use <strong>Canva</strong> for basic design work.
+        </p>
+        <p class="about-text">
+          My journey in music started at the age of <strong>12</strong> when I began playing the keyboard. Over time, I
+          became interested in <strong>music production</strong> and music programming. Since then, I have been learning
+          the basics of music composition and production. This interest in music helps me think creatively and stay
+          focused in my technical work. Now I have also started learning and implementing <strong>mixing and
+            mastering</strong> along with <strong>sound engineering</strong>.
+        </p>
+        <p class="about-text">
+          I am passionate about learning new skills, improving myself, and using my knowledge to solve
+          <strong>real-world engineering problems</strong>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section reveal">
+    <div class="section-header">
+      <div class="section-tag">JOURNEY</div>
+      <h2 class="section-title">MY <span class="accent">EDUCATION</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item glass-card">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Bachelor of Engineering (B.E)</h3>
+          <p class="timeline-subtitle">Loyola-ICAM College of Engineering and Technology</p>
+          <p class="about-text">
+            Currently pursuing my degree in <strong>Electronics and Communication Engineering</strong> with a strong
+            interest in <strong>IoT, embedded systems, automobile electronics, and smart technologies</strong>. I
+            actively work on practical projects related to embedded systems, automation, and web development to improve
+            my technical skills and industry knowledge.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item glass-card">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Higher Secondary Education</h3>
+          <p class="timeline-subtitle">Don Bosco Higher Secondary School Varadharajanpet</p>
+          <p class="about-text">
+            Completed my higher secondary education with interest in science and technology, which motivated me to
+            pursue engineering in the field of Electronics and Communication.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item glass-card">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">Primary School Education</h3>
+          <p class="timeline-subtitle">St. Mary's Matriculation School</p>
+          <p class="about-text">
+            Completed my primary schooling with active participation in academics and extracurricular activities,
+            helping me build a strong educational foundation and communication skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section reveal">
+    <div class="hud-line v" style="top:-50px; left:0;"></div>
+    <div class="section-header">
+      <div class="section-tag">EXPERTISE</div>
+      <h2 class="section-title">MY <span class="accent">SKILLS</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-text-container">
+      <div class="skill-category glass-card">
+        <h3 class="skill-cat-title">Technical Skills</h3>
+        <p class="about-text">
+          I am an Electronics and Communication Engineering student with a strong interest in <strong>IoT, embedded
+            systems, automobile electronics, and web development</strong>. I have worked on various projects using
+          <strong>Raspberry Pi, Arduino Uno, Raspberry Pi Pico WH</strong>, IR sensors, ultrasonic sensors, GSM/GPS
+          modules, ADC interfacing, UART communication, and real-time monitoring systems. I enjoy working with embedded
+          hardware, sensor interfacing, and automation-based applications.
+        </p>
+        <p class="about-text">
+          I have programming knowledge in <strong>Python, Embedded C, MicroPython, MATLAB, HTML, CSS, and
+            Bootstrap</strong>. I have also explored <strong>TinyML and edge AI</strong> concepts using Edge Impulse and
+          worked on machine learning concepts such as Logistic Regression, SVM, and TensorFlow. My areas of interest
+          include IoT systems, ECU technologies, truck electronics, vehicle safety systems, smart automation, signal
+          processing, and responsive web designing. I am also interested in learning modern automotive technologies and
+          intelligent embedded solutions used in automobiles and heavy vehicles.
+        </p>
+        <p class="about-text">
+          Apart from academics, I continuously improve my technical knowledge through online learning platforms and
+          practical project development.
+        </p>
+
+        <div class="skill-wall">
+          <div class="skill-logo" title="Arduino"><i class="devicon-arduino-plain"></i></div>
+          <div class="skill-logo" title="Python"><i class="devicon-python-plain"></i></div>
+          <div class="skill-logo" title="HTML5"><i class="devicon-html5-plain"></i></div>
+          <div class="skill-logo" title="CSS3"><i class="devicon-css3-plain"></i></div>
+          <div class="skill-logo" title="C"><i class="devicon-c-plain"></i></div>
+          <div class="skill-logo" title="Git"><i class="devicon-git-plain"></i></div>
+          <div class="skill-logo" title="GitHub"><i class="devicon-github-original"></i></div>
+          <div class="skill-logo" title="Thonny"><img src="https://simpleicons.org/icons/python.svg" alt="Thonny"></div>
+          <div class="skill-logo" title="FL Studio"><img src="assets/fl_studio_icon.png" alt="FL Studio"
+              class="colorful-icon"></div>
+          <div class="skill-logo" title="Logic Pro"><img src="https://simpleicons.org/icons/apple.svg" alt="Logic Pro">
+          </div>
+          <div class="skill-logo" title="Reaper"><img src="assets/reaper_icon.png" alt="Reaper" class="colorful-icon">
+          </div>
+          <div class="skill-logo" title="Cubase"><img src="https://simpleicons.org/icons/steinberg.svg" alt="Cubase">
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category glass-card" style="margin-top: 32px;">
+        <h3 class="skill-cat-title">Non-Technical Skills</h3>
+        <p class="about-text">
+          I am a <strong>student to learn a new things with eager </strong> to good in problem-solving, analytical
+          thinking, and teamwork skills. I
+          have ability to adapt easily to new technologies but even I want to lean a new technologies and enjoy learning
+          beyond classroom concepts through practical
+          experiences and industrial exposure. I have good communication and presentation skills, which help me work
+          effectively in both team-based and individual projects.
+        </p>
+        <p class="about-text">
+          I am also passionate about <strong>music programming, keyboard playing, and music composition</strong>, which
+          help me improve my creativity and concentration. Along with technology, I have a strong interest in
+          <strong>trucks, automobiles, and advanced vehicle systems</strong>. I enjoy exploring new ideas, learning from
+          real-world experiences, and building projects that combine creativity with technology.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section reveal">
+    <div class="section-header">
+      <div class="section-tag">PORTFOLIO</div>
+      <h2 class="section-title">FEATURED <span class="accent">PROJECTS</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card glass-card" style="border-color: rgba(255, 200, 0, 0.4);">
+        <div class="project-header">
+          <div class="project-num">P_01</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon">&#x1F916;</div>
+        <h3 class="project-title">Smart Canteen App &mdash; Telegram Bot</h3>
+        <p class="project-desc">Built a Smart Canteen ordering system using a Telegram Bot at
+          <strong>Envision'23</strong>, an inter-department college event (2023, 1st Year). As <strong>Team 2</strong>,
+          we collaborated across all departments. Won <strong>&#x1F948; 2nd Place</strong> earning a cash prize of
+          <strong>&#x20B9;7,000</strong> and a certificate of achievement.</p>
+        <div class="project-tags">
+          <span class="tag">Telegram Bot</span><span class="tag">Python</span><span class="tag">Canteen App</span><span
+            class="tag">Envision'23</span><span class="tag">&#x1F3C6; &#x20B9;7,000 Prize</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_02</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Smart Pothole Detection &amp; Alert System</h3>
+        <p class="project-desc">Developed a smart pothole detection system using Raspberry Pi, IR sensors, GSM, and GPS
+          modules. Sends location details via GSM/GPS and alerts the driver with sound notifications in real-time.</p>
+        <div class="project-tags">
+          <span class="tag">RPi</span><span class="tag">IR Sensor</span><span class="tag">GSM</span><span
+            class="tag">GPS</span><span class="tag">IoT</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_03</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Livestock Management IoT Application</h3>
+        <p class="project-desc">Built an IoT application for livestock management to monitor animal conditions and farm
+          activities efficiently with real-time sensor-based monitoring for smart farming.</p>
+        <div class="project-tags">
+          <span class="tag">IoT</span><span class="tag">Sensors</span><span class="tag">Smart Farming</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_04</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Edge Impulse TinyML Project</h3>
+        <p class="project-desc">Implemented machine learning on embedded devices using Edge Impulse. Collected sensor
+          data, trained a model, and deployed it on edge hardware for real-time low-power processing.</p>
+        <div class="project-tags">
+          <span class="tag">TinyML</span><span class="tag">Edge AI</span><span class="tag">Embedded ML</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_05</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Smart Prepaid Energy Meter</h3>
+        <p class="project-desc">Developed a smart prepaid energy meter to monitor electricity usage in real-time with
+          prepaid balance tracking for effective energy management.</p>
+        <div class="project-tags">
+          <span class="tag">Embedded</span><span class="tag">IoT</span><span class="tag">Energy</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_06</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Smart Lock System</h3>
+        <p class="project-desc">Designed a smart lock system using embedded technology for secure access control with
+          automated locking and authentication methods.</p>
+        <div class="project-tags">
+          <span class="tag">Security</span><span class="tag">Embedded</span><span class="tag">Automation</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_07</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Smart Combined Agricultural System</h3>
+        <p class="project-desc">Built a smart agricultural system combining monitoring and automation using sensors and
+          IoT technology for efficient farming operations.</p>
+        <div class="project-tags">
+          <span class="tag">IoT</span><span class="tag">Sensors</span><span class="tag">Agriculture</span><span
+            class="tag">Automation</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_08</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Audio Noise Reduction — MATLAB</h3>
+        <p class="project-desc">Improved audio signal quality by removing unwanted noise using signal processing and
+          filtering techniques in MATLAB for digital audio analysis.</p>
+        <div class="project-tags">
+          <span class="tag">MATLAB</span><span class="tag">DSP</span><span class="tag">Audio</span><span
+            class="tag">Filtering</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_09</div>
+          <div class="project-status completed">DONE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Tamil Church Website</h3>
+        <p class="project-desc">Designed a responsive multi-page Tamil church website with events, gallery, prayers,
+          schools, shrines, and contact sections with Tamil content support.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span><span
+            class="tag">Responsive</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_10</div>
+          <div class="project-status active">ACTIVE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Music Programming Projects</h3>
+        <p class="project-desc">Digital audio projects involving sound arrangement, sequencing, and music production
+          using various tools and techniques for creating compositions digitally.</p>
+        <div class="project-tags">
+          <span class="tag">Music Prod</span><span class="tag">Sequencing</span><span class="tag">Audio</span>
+        </div>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-header">
+          <div class="project-num">P_11</div>
+          <div class="project-status active">ACTIVE</div>
+        </div>
+        <div class="project-icon"></div>
+        <h3 class="project-title">Keyboard Music Composition</h3>
+        <p class="project-desc">Compose and arrange music using keyboard instruments and digital tools — melody
+          creation, chord arrangements, rhythm patterns, and production techniques.</p>
+        <div class="project-tags">
+          <span class="tag">Keyboard</span><span class="tag">Composition</span><span class="tag">Arrangement</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Music Section -->
+  <section id="hobbies" class="section reveal">
+    <div class="section-header">
+      <div class="section-tag">PASSIONS</div>
+      <h2 class="section-title">MUSIC <span class="accent">PORTFOLIO</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- Music Skills -->
+    <div class="music-skills-row">
+      <div class="music-skill-chip">
+        <span class="msc-icon">🎹</span>
+        <div class="msc-info">
+          <span class="msc-name">Keyboard Player</span>
+          <span class="msc-detail">Since age 12</span>
+        </div>
+      </div>
+      <div class="music-skill-chip">
+        <span class="msc-icon">🎛️</span>
+        <div class="msc-info">
+          <span class="msc-name">Music Programmer</span>
+          <span class="msc-detail">DAW & Sequencing</span>
+        </div>
+      </div>
+      <div class="music-skill-chip">
+        <span class="msc-icon">🎚️</span>
+        <div class="msc-info">
+          <span class="msc-name">Mixing & Mastering</span>
+          <span class="msc-detail">Audio Post-Production</span>
+        </div>
+      </div>
+      <div class="music-skill-chip">
+        <span class="msc-icon">🔊</span>
+        <div class="msc-info">
+          <span class="msc-name">Sound Engineering</span>
+          <span class="msc-detail">Recording & Processing</span>
+        </div>
+      </div>
+      <div class="music-skill-chip">
+        <span class="msc-icon">🎼</span>
+        <div class="msc-info">
+          <span class="msc-name">Composition</span>
+          <span class="msc-detail">Melody & Arrangement</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Tracks -->
+    <div class="music-tracks">
+      <h3 class="tracks-title">🎧 My Tracks</h3>
+      <p class="tracks-subtitle">Listen to some of my compositions and arrangements</p>
+
+      <div class="track-card glass-card">
+        <div class="track-info">
+          <div class="track-num">01</div>
+          <div class="track-details">
+            <h4 class="track-name">Allen Composition 01</h4>
+            <span class="track-genre">Music Track</Track></span>
+          </div>
+        </div>
+        <audio controls class="track-audio">
+          <source src="assets/allen1_JahC3MWS.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="track-card glass-card">
+        <div class="track-info">
+          <div class="track-num">02</div>
+          <div class="track-details">
+            <h4 class="track-name">Allen New Track</h4>
+            <span class="track-genre">Music Arrangements and compositions</span>
+          </div>
+        </div>
+        <audio controls class="track-audio">
+          <source src="assets/allennuu_SEMRfOiC.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="track-card glass-card">
+        <div class="track-info">
+          <div class="track-num">03</div>
+          <div class="track-details">
+            <h4 class="track-name">Allen Ambient Arrangement</h4>
+            <span class="track-genre">Allen's Melting Melody </span>
+          </div>
+        </div>
+        <audio controls class="track-audio">
+          <source src="assets/untitled-4_F8hEFSmG.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section reveal">
+    <div class="section-header">
+      <div class="section-tag">CONNECT</div>
+      <h2 class="section-title">GET IN <span class="accent">TOUCH</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form-wrap glass-card">
+        <h3 class="contact-subtitle">Send a Message</h3>
+        <form id="contact-form" class="contact-form"
+          action="https://script.google.com/macros/s/AKfycbyCdNBRRHkU6HQyvia7DImxNJSV9t4mIgO_uEPVcsoucX9py6lY0HC2wkkh_pqo6N0j/exec"
+          method="POST" target="hidden_iframe">
+          <div class="form-group">
+            <label class="form-label">NAME</label>
+            <input type="text" name="name" class="form-input" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">EMAIL</label>
+            <input type="email" name="email" class="form-input" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">MESSAGE</label>
+            <textarea name="message" class="form-input form-textarea" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" onclick="handleFormSubmit(this, event)">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+
+      <div class="contact-social">
+        <h3 class="contact-subtitle">Social Profiles</h3>
+        <div class="social-grid">
+          <a href="https://allen-portfolio.vercel.app" target="_blank" class="social-card glass-card" data-platform="Portfolio">
+            <div class="social-icon pf">🌐</div>
+            <div class="social-info">
+              <div class="social-name">Portfolio</div>
+              <div class="social-handle">allen-portfolio.vercel.app</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/allen-samuel-a-05988937a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" class="social-card glass-card" data-platform="LinkedIn">
+            <div class="social-icon">in</div>
+            <div class="social-info">
+              <div class="social-name">LinkedIn</div>
+              <div class="social-handle">allen-samuel-a</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="https://www.instagram.com/_allen_2209?utm_source=qr&igsh=NHoyczZuOG5vYzhy" target="_blank"
+            class="social-card glass-card" data-platform="Instagram">
+            <div class="social-icon ig">📸</div>
+            <div class="social-info">
+              <div class="social-name">Instagram</div>
+              <div class="social-handle">@_allen_2209</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100088237698940&rdid=8Lt4IROaoCpfjMWE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1APqGP4RRi%2F#"
+            target="_blank" class="social-card glass-card" data-platform="Facebook">
+            <div class="social-icon fb">f</div>
+            <div class="social-info">
+              <div class="social-name">Facebook</div>
+              <div class="social-handle">Allen Samuel</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="https://x.com/allen_22_09" target="_blank" class="social-card glass-card" data-platform="Twitter">
+            <div class="social-icon tw">𝕏</div>
+            <div class="social-info">
+              <div class="social-name">Twitter / X</div>
+              <div class="social-handle">@allen_22_09</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="https://github.com/Allen2209" target="_blank" class="social-card glass-card" data-platform="GitHub">
+            <div class="social-icon gh"><i class="devicon-github-original"></i></div>
+            <div class="social-info">
+              <div class="social-name">GitHub</div>
+              <div class="social-handle">Allen2209</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="mailto:allensamuel2209@gmail.com" class="social-card glass-card" data-platform="Email">
+            <div class="social-icon em">✉</div>
+            <div class="social-info">
+              <div class="social-name">Email</div>
+              <div class="social-handle">allensamuel2209@gmail.com</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+          <a href="tel:8973146141" class="social-card glass-card" data-platform="Phone">
+            <div class="social-icon ph">☎</div>
+            <div class="social-info">
+              <div class="social-name">Phone</div>
+              <div class="social-handle">8973146141</div>
+            </div>
+            <div class="social-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket"></span>
+        <span class="logo-text">ALLEN</span>
+      </div>
+      <div class="footer-text">
+        <span class="footer-signal">*</span>
+        Designed & Built for the <span class="accent">Future</span>
+        <span class="footer-signal">*</span>
+      </div>
+      <div class="footer-copy">© 2026 All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Hidden iframe for silent form submission -->
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+  <!-- Notification -->
+  <div id="notification" class="notification">
+    <span class="notif-icon">✓</span>
+    <span class="notif-text">Message sent successfully!</span>
+  </div>
+
+  <script src="three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
