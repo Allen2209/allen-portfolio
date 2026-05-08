@@ -77,34 +77,55 @@
 })();
 
 // ============ FORM HANDLER (Hidden iFrame Submit) ============
-function handleFormSubmit(btn, event) {
+async function handleFormSubmit(btn, event) {
   event.preventDefault();
 
   const form = document.getElementById("contact-form");
-  const name = form.querySelector('input[name="name"]').value;
-  const email = form.querySelector('input[name="email"]').value;
-  const message = form.querySelector('textarea[name="message"]').value;
+  const formData = new FormData(form);
+  
+  // Basic validation
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const message = formData.get("message");
 
   if (!name || !email || !message) {
     alert("Please fill in all fields.");
     return;
   }
 
-  // Submit the form silently via the hidden iframe
-  form.submit();
-
-  // Show UI feedback
+  // Show loading state
   const original = btn.innerText;
-  btn.innerText = "SENT! ✓";
+  btn.innerText = "SENDING...";
   btn.disabled = true;
 
-  const notif = document.getElementById("notification");
-  notif.classList.add("show");
-  form.reset();
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
 
-  setTimeout(() => {
-    notif.classList.remove("show");
+    const result = await response.json();
+
+    if (result.success) {
+      // Show UI feedback
+      btn.innerText = "SENT! ✓";
+      
+      const notif = document.getElementById("notification");
+      notif.classList.add("show");
+      form.reset();
+
+      setTimeout(() => {
+        notif.classList.remove("show");
+        btn.innerText = original;
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      throw new Error(result.message || "Form submission failed");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Something went wrong. Please try again later.");
     btn.innerText = original;
     btn.disabled = false;
-  }, 3000);
+  }
 }

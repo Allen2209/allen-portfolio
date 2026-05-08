@@ -500,8 +500,9 @@
       <div class="contact-form-wrap glass-card">
         <h3 class="contact-subtitle">Send a Message</h3>
         <form id="contact-form" class="contact-form"
-          action="https://script.google.com/macros/s/AKfycbylSSmOUdEFY8RCy9rjP17ZuuGs1STKbbQ2RGxfoToWXIp2pPXDaH9A4ftKGHAWN5om/exec"
-          method="POST" target="hidden_iframe">
+          action="https://api.web3forms.com/submit"
+          method="POST">
+          <input type="hidden" name="access_key" value="25f7d744-0bd7-456f-845a-7344e2163063">
           <div class="form-group">
             <label class="form-label">NAME</label>
             <input type="text" name="name" class="form-input" placeholder="Your Name" required />
@@ -611,8 +612,7 @@
     </div>
   </footer>
 
-  <!-- Hidden iframe for silent form submission -->
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
 
   <!-- Notification -->
   <div id="notification" class="notification">
